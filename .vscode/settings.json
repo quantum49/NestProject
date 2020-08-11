@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true
+}

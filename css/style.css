@@ -117,7 +117,13 @@ i.fa-desktop, i.fa-arrow-circle-down, i.fa-address-card {
 }
 
 /*============= PORTFOLIO SECTION =============*/
-
+.portfolio-item img {
+    transition: transform .4s ease;
+}
+.portfolio-item img:hover {
+    cursor: zoom-in;
+    transform: scale(1.1);
+}
 
 
 /*============= TESTIMONIALS SECTION =============*/
