@@ -127,14 +127,77 @@ i.fa-desktop, i.fa-arrow-circle-down, i.fa-address-card {
 
 
 /*============= TESTIMONIALS SECTION =============*/
+.card h5 {
+    color: #00b3ff;
+}
 
+.card p, .footer p {
+    font-size: 1.1rem;
+}
 
 
 /*============= CONTACT SECTION =============*/
+.footer {
+    background-color: #565b61
+}
 
+.footer img {
+    height: 2rem;
+}
 
+.footer a {
+    color: white;
+}
+
+.footer i.fa-facebook-square,
+.footer i.fa-twitter-square,
+.footer i.fa-youtube-square,
+.footer i.fa-linkedin {
+    font-size: 1.6rem;
+}
+.footer i.fa-facebook-square:hover,
+.footer i.fa-twitter-square:hover,
+.footer i.fa-youtube-square:hover,
+.footer i.fa-linkedin:hover {
+    color: #00b3ff;
+}
+
+ul.social {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.social li {
+    display: inline;
+    padding-right: .8rem;
+}
 /*-- Contact Form --*/
+.form-group {
+    margin-bottom: 1.3rem;
+}
 
+.form-control {
+    background: #53595f;
+    border-radius: 0;
+    border: .15rem solid #666571;
+    color: white !important;
+    font-size: 1.1rem;
+}
+
+.form-control:focus {
+    background: #53595f;
+    border: .15rem solid #666571;
+}
+
+.form-group input::placeholder, 
+.form-group textarea::placeholder {
+    color: #b2b5b8;
+}
+
+.socket {
+    border-top: .2rem solid #666b71;
+}
 
 /*============= MEDIA QUERIES =============*/
 
@@ -146,7 +209,7 @@ i.fa-desktop, i.fa-arrow-circle-down, i.fa-address-card {
 .caption h1 {
     font-size: 1.8rem;
 }
-
+}
 
 /*============ BOOTSTRAP BREAK POINTS:
 

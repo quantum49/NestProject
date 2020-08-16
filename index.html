@@ -176,7 +176,7 @@
 
 
   <!-- Start Testimonials Section -->
-  <div div id="testimonials" class="offset">
+  <div id="testimonials" class="offset">
   <!-- start jumbotron -->
   <div class="jumbotron text-center pb-5 mb-0">
     <h2 class="text-uppercase font-weight-bold">Testimonials</h2>
@@ -190,18 +190,92 @@
           <div class="col-md-6 pb-5">
             <div class="card rounded-0">
               <img src="img/testimonials/1.jpg" alt="" class="card-img-top rounded-0">
+              <div class="card-body">
+                <h4>John Lee</h4>
+                <h5 class="mt-2 mb-3">CEO, Company Inc.</h5>
+                <p class="lead border-top pt-3">I have over 10 years of experience in technology and haven't come across a better service.</p>
+              </div>
             </div>
-
           </div>
-        </div>
-      </div>
+
+          <div class="col-md-6">
+            <div class="card rounded-0">
+              <img src="img/testimonials/2.jpg" alt="" class="card-img-top rounded-0">
+              <div class="card-body">
+                <h4>Jessica Miller</h4>
+                <h5 class="mt-2 mb-3">President, Company Inc.</h5>
+                <p class="lead border-top pt-3">I have over 10 years of experience in technology and haven't come across
+                  a better service.</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+      </div> <!-- End Column -->
+
     </div>
+    <!-- End Row -->
   </div>
   <!-- end jumbotron -->
   </div>
   <!-- End Testimonials Section -->
+
+
   <!-- Start Contact Section -->
-  <div id="contact" class="offset"></div>
+  <div id="contact" class="offset">
+
+    <div class="container-fluid footer">
+      <div class="row text-light pt-4 pb-5 px-2 px-md-5">
+        <div class="col-md-5">
+          <img src="img/nest.png" alt="" class="my-4">
+          <p>At our core is a collection of design and development solutions that represent everything your business need to compete in the modern marketplace</p>
+          <strong>Our Location</strong>
+          <p>100 Street Name<br>Our City, AA 1000</p>
+          <strong>Contact Info</strong>
+          <p>(888)888-8888<br>me@3nubie.com</p>
+          <ul class="social pt3">
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-7">
+          <h3 class="text-uppercase my-4">Contact Us</h3>
+        <!-- Start form   -->
+          <form action="contact/contact.php" method="post" id="contact-form">
+            <div class="messages"></div>
+
+            <div class="controls">
+
+              <div class="form-group">
+                <input type="text" name="name" id="form_name" class="form-control" required="required" placeholder="Enter your name.">
+              </div>
+
+              <div class="form-group">
+                <input type="email" name="email" id="form_email" class="form-control" required="required" placeholder="Enter your email.">
+              </div>
+
+              <div class="form-group">
+                <textarea name="message" id="form_message" rows="4" class="form-control" required="required" placeholder="Add your message here"></textarea>
+              </div>
+
+              <input type="submit" value="send message" class="btn btn-outline-light text-uppercase rounded-0">
+
+            </div>
+          </form>
+          <!-- End form -->
+
+        </div> <!-- End of column-->
+
+        <hr class="socket w-100">
+        &copy; &nbsp; <span id="year"></span> &nbsp; w3newbie Nest Theme
+
+      </div> <!-- End of row-->
+    </div> <!-- End Footer Container Fluid -->
+
+  </div>  
   <!-- End Contact Section -->
 
   <!-- Script Source Files -->
@@ -230,6 +304,11 @@
 
   <!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+  <script>
+    // get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
 
   <!-- End of Script Source Files -->
 </body>
